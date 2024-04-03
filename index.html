@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Le code html est pour des français-->
+<head>
+    <meta charset="UTF-8"> <!-- Autorise les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptez l'écran pour mobile-->
+    <title>Calculator</title> <!-- Titre -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS -->
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div> <!-- Affichage de la calculatrice -->
+        <div class="buttons">
+
+            <!-- Ligne 1 des boutons -->
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="appendToDisplay('/')">/</button> <!-- Bouton pour la division -->
+            <button onclick="clearDisplay()">C</button> <!-- Bouton pour effacer l'affichage -->
+            <button onclick="backspace()">Delete</button> <!-- Bouton pour effacer un chiffre -->
+
+            <!-- Ligne 2 des boutons -->
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('.')">.</button> <!-- Bouton pour le point décimal -->
+            <button onclick="appendToDisplay('+')">+</button> <!-- Bouton pour l'addition -->
+
+            <!-- Ligne 3 des boutons -->
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')">*</button> <!-- Bouton pour la multiplication -->
+            <button onclick="appendToDisplay('-')">-</button> <!-- Bouton pour la soustraction -->
+
+            <!-- Ligne 4 des boutons -->
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="calculate()">=</button> <!-- Bouton pour effectuer le calcul -->
+
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>

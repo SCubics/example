@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Police de caractères */
+    display: flex; /* Modèle de boîte flexible */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Hauteur de la page égale à la fenêtre */
+    margin: 0; /* Supprimer les marges par défaut */
+    background-color: #000; /* Couleur de fond de la page (noir) */
+    color: #fff; /* Couleur du texte (blanc) */
+}
+
+.calculator {
+    width: 400px; /* Largeur de la calculatrice */
+    background-color: #444; /* Couleur de fond de la calculatrice */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    padding: 10px; /* Espacement intérieur */
+}
+
+.display {
+    background-color: #555; /* Couleur de fond de l'affichage */
+    color: #fff; /* Couleur du texte de l'affichage */
+    padding: 10px; /* Espacement intérieur */
+    text-align: right; /* Alignement du texte à droite */
+    border-top-left-radius: 5px; /* Coin supérieur gauche arrondi */
+    border-top-right-radius: 5px; /* Coin supérieur droit arrondi */
+    border-bottom: 1px solid #777; /* Bordure inférieure */
+}
+
+.buttons {
+    display: grid; /* Modèle de grille pour les boutons */
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes égales */
+    grid-gap: 5px; /* Espacement entre les boutons */
+}
+
+button {
+    border: none; /* Pas de bordure */
+    background-color: #777; /* Couleur de fond des boutons */
+    color: #fff; /* Couleur du texte des boutons */
+    padding: 20px; /* Espacement intérieur */
+    cursor: pointer; /* Curseur pointeur */
+    font-size: 20px; /* Taille de police */
+}
+
+button:hover {
+    background-color: #999; /* Couleur de fond des boutons au survol */
+}
